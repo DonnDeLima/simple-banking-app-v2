@@ -127,7 +127,7 @@ The security review of the system revealed several critical vulnerabilities and 
 - **email-validator** – Email format validation
 - **Flask-Limiter 3.5.0** – Rate limiting for API and auth endpoints
 
-### ⚙ Configuration & Environment
+###  Configuration & Environment
 - **python-dotenv 1.0.0** – Environment variable management
 - **Werkzeug 2.3.7** – Flask dependency for WSGI utilities
 
