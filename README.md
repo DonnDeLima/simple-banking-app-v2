@@ -86,12 +86,6 @@ The security review of the system revealed several critical vulnerabilities and 
 6. Session Hardening
   - Configure secure session cookies with `HttpOnly`, `Secure`, and `SameSite` attributes to protect against hijacking.
 
-- * Output Safety
-  - Use **Jinja2 auto-escaping** with strict input sanitization to guard against injection attacks and XSS vulnerabilities.
-
-- **📡 HTTP Security**
-  - Enable **Flask-Talisman** to enforce HTTPS and add essential security headers such as `Content-Security-Policy` and `Strict-Transport-Security`.
-
 
 ## **Penetration Testing Report**
 
