@@ -34,7 +34,6 @@ Database-backed with MySQL using SQLAlchemy.
 ## **Security Assessment Findings**
 
 The security review of the system revealed several critical vulnerabilities and weaknesses that could expose it to both external and internal threats.
-## Security Assessment Findings
 
 1. Weak Password Practices
   - Passwords stored with minimal validation.
@@ -67,8 +66,32 @@ The security review of the system revealed several critical vulnerabilities and 
 
 ## **Security Improvements Implemented**
 
----
----
+
+1. Password Security
+  - Enforce minimum password length with required use of mixed characters, numbers, and uppercase letters.
+  - Store all credentials using the **Bcrypt* hashing algorithm for strong protection.
+
+2.  Financial Precision
+  - Use decimal data types instead of float for all monetary computations to avoid rounding errors.
+
+3.    CSRF Defense
+  - Apply Flask-WTF CSRF protection across all forms in the application to prevent cross-site request forgery attacks.
+
+4.    Rate Protection
+  - Implement Flask-Limiter on critical endpoints  to prevent brute-force and request abuse.
+
+5.  API Resilience**
+  - Integrate timeout handling and fallback logic for PSGC API interactions to ensure system stability during failures.
+
+6. Session Hardening
+  - Configure secure session cookies with `HttpOnly`, `Secure`, and `SameSite` attributes to protect against hijacking.
+
+- * Output Safety
+  - Use **Jinja2 auto-escaping** with strict input sanitization to guard against injection attacks and XSS vulnerabilities.
+
+- **📡 HTTP Security**
+  - Enable **Flask-Talisman** to enforce HTTPS and add essential security headers such as `Content-Security-Policy` and `Strict-Transport-Security`.
+
 
 ## **Penetration Testing Report**
 
