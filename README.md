@@ -36,7 +36,7 @@ Database-backed with MySQL using SQLAlchemy.
 The security review of the system revealed several critical vulnerabilities and weaknesses that could expose it to both external and internal threats.
 ## Security Assessment Findings
 
-1. Weak Password Practices**
+1. Weak Password Practices
   - Passwords stored with minimal validation.
   - Use of weak default credentials increases risk of unauthorized access.
 
