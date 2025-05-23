@@ -33,8 +33,37 @@ Database-backed with MySQL using SQLAlchemy.
 
 ## **Security Assessment Findings**
 
----
----
+The security review of the system revealed several critical vulnerabilities and weaknesses that could expose it to both external and internal threats.
+## 🔐 Security Assessment Findings
+
+1. Weak Password Practices**
+  - Passwords stored with minimal validation.
+  - Use of weak default credentials increases risk of unauthorized access.
+
+2. Financial Calculation Risk
+  - Use of floating-point values for balance calculations can lead to rounding errors.
+
+3.  API Error Handling
+  - Lack of error handling for PSGC API failures
+
+4.   XSS Vulnerability
+  - No output escaping on user-generated content (risk of Cross-Site Scripting).
+
+5. 🔐 Data Transmission Security**
+  - No HTTPS enforcement; sensitive data may be intercepted.
+  - Missing security headers reduce resistance to web attacks.
+
+6.   Session and CSRF Issues
+  - Incomplete session management.
+  - CSRF token implementation is inconsistent or missing.
+
+7.   Outdated Dependencies
+  - Use of outdated third-party packages with known vulnerabilities.
+
+8. Lack of Audit Logging
+  - Admin/manager actions are untracked.
+  - No audit trail exists for sensitive operations.
+
 
 ## **Security Improvements Implemented**
 
