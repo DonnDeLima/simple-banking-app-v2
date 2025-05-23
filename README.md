@@ -34,7 +34,7 @@ Database-backed with MySQL using SQLAlchemy.
 ## **Security Assessment Findings**
 
 The security review of the system revealed several critical vulnerabilities and weaknesses that could expose it to both external and internal threats.
-## 🔐 Security Assessment Findings
+## Security Assessment Findings
 
 1. Weak Password Practices**
   - Passwords stored with minimal validation.
@@ -49,7 +49,7 @@ The security review of the system revealed several critical vulnerabilities and 
 4.   XSS Vulnerability
   - No output escaping on user-generated content (risk of Cross-Site Scripting).
 
-5. 🔐 Data Transmission Security**
+5.  Data Transmission Security
   - No HTTPS enforcement; sensitive data may be intercepted.
   - Missing security headers reduce resistance to web attacks.
 
