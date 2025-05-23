@@ -6,9 +6,6 @@
 - Donn Robert De Lima
 - Marevel Regaspi
 
----
----
-
 ## **Introduction**
 
 ---
@@ -16,13 +13,25 @@
 
 ## **Objecttives**
 
----
----
+Provide secure authentication and authorization mechanisms.
+
+Enable users to perform banking transactions safely.
+
+Ensure administrative oversight via an admin interface.
+
+Harden the application against common web vulnerabilities such as CSRF, rate limiting issues, and SQL injection.
 
 ## **Original Application Features**
 
----
----
+User authentication using Flask-Login and bcrypt for password hashing.
+
+Transaction logging and user account management.
+
+CSRF protection with Flask-WTF.
+
+Rate limiting using Flask-Limiter to prevent abuse of endpoints.
+
+Database-backed with MySQL using SQLAlchemy.
 
 ## **Security Assessment Findings**
 
@@ -46,8 +55,13 @@
 
 ## **Technology Stack**
 
----
----
+Backend: Python, Flask
+
+Database: MySQL with SQLAlchemy ORM
+
+Security: Flask-WTF (CSRF), Flask-Limiter (Rate limiting), bcrypt (Password hashing)
+
+Extensions: Flask-Login, Flask-Migrate, dotenv, Flask-Talisman (recommended)
 
 ## **Setup Instructions**
 
