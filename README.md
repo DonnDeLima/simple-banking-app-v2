@@ -100,6 +100,37 @@ The security review of the system revealed several critical vulnerabilities and 
 ## **Technology Stack**
 
 
+### Backend
+- **Python 3.x**
+- **Flask 2.3.3** – Web framework
+- **Flask-SQLAlchemy 3.0.5** – ORM for database interaction
+
+### Database
+- **MySQL / MariaDB** – Relational database system
+  - Accessed via **PyMySQL 1.1.0**
+  - Uses `DECIMAL` fields for precision in financial transactions
+
+### Frontend
+- **HTML5**, **CSS3**, **Bootstrap 5**
+- **Jinja2 Templates** – Server-side rendering of dynamic content
+
+### Security & Authentication
+- **Flask-Bcrypt 1.0.1** – Password hashing
+- **Flask-WTF 1.1.1** – Form handling with CSRF protection
+- **WTForms 3.0.1** – Flexible form validation
+- **Flask-Login 0.6.2** – User session management
+- **itsdangerous 2.1.2** – Secure data serialization
+- **cryptography** – General cryptographic functions
+
+### Networking & API
+- **requests 2.31.0** – HTTP requests for external APIs (e.g., PSGC GitLab)
+- **email-validator** – Email format validation
+- **Flask-Limiter 3.5.0** – Rate limiting for API and auth endpoints
+
+### ⚙ Configuration & Environment
+- **python-dotenv 1.0.0** – Environment variable management
+- **Werkzeug 2.3.7** – Flask dependency for WSGI utilities
+
 
 ## **Setup Instructions**
 
