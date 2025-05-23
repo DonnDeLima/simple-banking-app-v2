@@ -1,4 +1,4 @@
-# [Project Title]
+# [SimpleBankApp]
 
 
 ### Group Members: 
@@ -55,13 +55,7 @@ Database-backed with MySQL using SQLAlchemy.
 
 ## **Technology Stack**
 
-Backend: Python, Flask
 
-Database: MySQL with SQLAlchemy ORM
-
-Security: Flask-WTF (CSRF), Flask-Limiter (Rate limiting), bcrypt (Password hashing)
-
-Extensions: Flask-Login, Flask-Migrate, dotenv, Flask-Talisman (recommended)
 
 ## **Setup Instructions**
 
