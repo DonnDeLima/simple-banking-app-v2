@@ -509,27 +509,24 @@ Security Benefit:
 |               | Werkzeug                                   | Utility library for secure password comparison                         |
 |               | hmac                                       | Secure comparison to prevent timing attacks                            |
 |               | `python-dotenv`                            | Environment variable management                                        |
-
 | **Database**  | MySQL                                      | Relational database system                                              |
 |               | SQLAlchemy                                 | ORM for database interaction                                            |
 |               | Flask-SQLAlchemy                           | Integration of SQLAlchemy with Flask                                    |
-
 | **Frontend**  | HTML, CSS                                  | Markup and styling                                                      |
 |               | Bootstrap 5                                | Responsive UI framework                                                 |
 |               | Jinja2                                     | Templating engine for Flask                                            |
 |               | JavaScript                                 | Frontend interactivity                                                  |
-
 | **Forms**     | Flask-WTF                                  | Integration of WTForms with Flask for CSRF-protected forms              |
 |               | WTForms                                    | Form handling and input validation                                      |
-
 | **Security**  | CSRF Protection                            | Built into Flask-WTF to prevent CSRF attacks                            |
 |               | Flask-Limiter                              | Protects routes from excessive access (rate limiting)                   |
 |               | Password Hashing (Bcrypt)                  | Secure password storage                                                 |
-
 | **External APIs** | PSGC API                               | Fetches Philippine Standard Geographic Code data                        |
-
 | **Version Control** | Git                                   | Source code management                                                  |
 |                     | GitHub / GitLab                       | Remote repository hosting                                               |
+
+---
+---
 
 <div align = 'center'>
 <center>
