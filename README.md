@@ -1,10 +1,14 @@
-# [Simple Banking App]
+# Securing an Existing Banking Application - Security Assessment and Improvement of a Web-Based Banking Application
 
 
 ### Group Members: 
 - Ruby Joy Belgado
 - Donn Robert De Lima
 - Marevel Regaspi
+
+**Live Web App**: [Deployed Banking Application](https://donndelima.pythonanywhere.com)
+
+**Video Presentation**: [Youtube Link]()
 
 ---
 ---
@@ -362,6 +366,18 @@ Security Benefit:
 - Blocks malicious input such as zero or negative values.
 - Prevents extreme values that could cause overflow, fraud, or ledger imbalance.
 - Adds a layer of business rule enforcement directly in the controller.
+
+---
+
+| Recommendation                             | Status       |
+|--------------------------------------------|--------------|
+| Enforce `.env` configuration in production | ✅ Implemented |
+| Add logging for repeated failed attempts    | 🔄 Pending     |
+| Use rate limiting on auth endpoints         | 🔄 Pending     |
+| Add audit logs for admin actions            | 🔄 Pending     |
+| Conduct regular security code reviews       | 🔄 Ongoing     |
+
+> Note: Due to time constraints, Other sensitive routes such as `/manager`, `/api`, and `/admin/edit_user` was not thoroughly audited. These endpoints should be prioritized in the next round of review to ensure proper access control and input validation are in place.
 
 ---
 ---
