@@ -8,7 +8,7 @@
 
 **Live Web App**: [Deployed Banking Application](https://donndelima.pythonanywhere.com)
 
-**Video Presentation**: [Youtube Link]()
+**Video Presentation**: [Youtube Link](https://youtu.be/gzN27lX6du4)
 
 ---
 ---
@@ -545,12 +545,77 @@ Security Benefit:
 <div align = 'center'>
 <center>
 <h1>Setup Instructions</h1>
-1.  - Push code to GitHub
-2. - Clone into PythonAnywhere
-3. Configure a virtualenv and install requirements
-4. Set environmental variables in the dashboard**
 </center>
 </div>
+
+## Getting Started
+
+### Prerequisites
+- Python 3.7+
+- pip (Python package manager)
+- MySQL Server 5.7+ or MariaDB 10.2+
+- Git (optional, for cloning the repo)
+
+### Database Setup
+
+1. Install MySQL Server or MariaDB if you haven't already:
+   ```
+   # For Ubuntu/Debian
+   sudo apt update
+   sudo apt install mysql-server
+   
+   # For macOS with Homebrew
+   brew install mysql
+   
+   # For Windows
+   # Download and install from the official website
+   ```
+
+2. Create a database user and set privileges:
+   ```
+   mysql -u root -p
+   
+   # In MySQL prompt
+   CREATE USER 'bankapp'@'localhost' IDENTIFIED BY 'your_password';
+   GRANT ALL PRIVILEGES ON *.* TO 'bankapp'@'localhost';
+   FLUSH PRIVILEGES;
+   EXIT;
+   ```
+
+3. Update the `.env` file with your MySQL credentials:
+   ```
+   DATABASE_URL=mysql+pymysql://bankapp:your_password@localhost/simple_banking
+   MYSQL_USER=bankapp
+   MYSQL_PASSWORD=your_password
+   MYSQL_HOST=localhost
+   MYSQL_PORT=3306
+   MYSQL_DATABASE=simple_banking
+   ```
+
+4. Initialize the database:
+   ```
+   python init_db.py
+   ```
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/DonnDeLima/simple-banking-app-v2.git
+   cd simple-banking-app-v2
+   ```
+
+2. Install the required packages:
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Run the application:
+   ```
+   python app.py
+   ```
+
+4. Access the application at `http://localhost:5000`
 
 ---
 ---
