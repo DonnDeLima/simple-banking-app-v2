@@ -366,11 +366,7 @@ Security Benefit:
 ---
 ---
 
-<div align = 'center'>
-<center>
-<h1>Penetration Testing Report</h1>
-</center>
-</div>
+## **Original Application Features**
 
 | Route/File        | Vulnerability                                | Risk Level | Status     |
 |------------------|-----------------------------------------------|------------|------------|
