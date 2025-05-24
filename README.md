@@ -547,10 +547,10 @@ Security Benefit:
 <div align = 'center'>
 <center>
 <h1>Setup Instructions</h1>
- - Push code to GitHub
-- Clone into PythonAnywhere
-- Configure a virtualenv and install requirements
-= Set environmental variables in the dashboard**
+1.  - Push code to GitHub
+2. - Clone into PythonAnywhere
+3. Configure a virtualenv and install requirements
+4. Set environmental variables in the dashboard**
 </center>
 </div>
 
