@@ -369,20 +369,7 @@ Security Benefit:
 
 ---
 
-| Recommendation                             | Status       |
-|--------------------------------------------|--------------|
-| Enforce `.env` configuration in production | ✅ Implemented |
-| Add logging for repeated failed attempts    | 🔄 Pending     |
-| Use rate limiting on auth endpoints         | 🔄 Pending     |
-| Add audit logs for admin actions            | 🔄 Pending     |
-| Conduct regular security code reviews       | 🔄 Ongoing     |
-
-> Note: Due to time constraints, Other sensitive routes such as `/manager`, `/api`, and `/admin/edit_user` was not thoroughly audited. These endpoints should be prioritized in the next round of review to ensure proper access control and input validation are in place.
-
----
----
-
-## **Original Application Features**
+### **Penetration Testing Report**
 
 | Route/File        | Vulnerability                                | Risk Level | Status     |
 |------------------|-----------------------------------------------|------------|------------|
@@ -400,6 +387,17 @@ Security Benefit:
 | `/admin`         | Accounts default to active                   | High       | Fixed ✅   |
 | `/admin/deposit` | No deposit amount validation                 | High       | Fixed ✅   |
 
+---
+
+| Recommendation                             | Status       |
+|--------------------------------------------|--------------|
+| Enforce `.env` configuration in production | ✅ Implemented |
+| Add logging for repeated failed attempts    | 🔄 Pending     |
+| Use rate limiting on auth endpoints         | 🔄 Pending     |
+| Add audit logs for admin actions            | 🔄 Pending     |
+| Conduct regular security code reviews       | 🔄 Ongoing     |
+
+> Note: Due to time constraints, Other sensitive routes such as `/manager`, `/api`, and `/admin/edit_user` was not thoroughly audited. These endpoints should be prioritized in the next round of review to ensure proper access control and input validation are in place.
 
 ---
 ---
