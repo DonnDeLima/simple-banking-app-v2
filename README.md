@@ -8,7 +8,7 @@
 
 **Live Web App**: [Deployed Banking Application](https://donndelima.pythonanywhere.com)
 
-**Video Presentation**: [Youtube Link](https://youtu.be/gzN27lX6du4)
+**Video Presentation**: [Youtube Link](https://youtu.be/yOfim_oiT78)
 
 ---
 ---
